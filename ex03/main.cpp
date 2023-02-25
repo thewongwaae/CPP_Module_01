@@ -20,3 +20,7 @@ int main( void ) {
 	}
 	return 0;
 }
+
+
+// in this case bob's club is passed into the constructor as a reference.
+// jim's club is set as a pointer.
