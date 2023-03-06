@@ -1,10 +1,8 @@
 #include "Harl.hpp"
 
-using namespace std;
-
 int main( int ac, char **av ) {
 	Harl	coworker;
-	string	lvls[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	std::string	lvls[4] = {"DEBUG", "INFO", "WARNING", "ERROR"};
 	int		lvl = -1;
 
 	if (ac > 2)
@@ -28,7 +26,7 @@ int main( int ac, char **av ) {
 			coworker.complain(lvls[3]);
 			break;
 		default:
-			cout << "[ Probably complaining about insignificant problems ]" << endl;
+			std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 	}
 	return (0);
 }
